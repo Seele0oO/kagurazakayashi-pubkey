@@ -1,3 +1,5 @@
+[![Keybase](https://img.shields.io/badge/-Keybase-33A0FF?logo=Keybase&labelColor=33A0FF&logoColor=fff)](https://keybase.io/kagurazakayashi)
+
 # 🔑 Pubkey
 - Feel free to reach me via email/telegram/etc..
 - This is the pubkey in case you need.
