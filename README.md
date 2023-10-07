@@ -2,7 +2,7 @@
 
 **This is the pubkey in case you need.**
 
-[![Pubkey URL](https://img.shields.io/badge/-PGPkey-0093DD?logo=GNU%20Privacy%20Guard&labelColor=0093DD&logoColor=fff)](/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2023lts_0xB8C957F3_public.asc) **[Download Public Key](/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)**
+[![Pubkey URL](https://img.shields.io/badge/-PGPkey-0093DD?logo=GNU%20Privacy%20Guard&labelColor=0093DD&logoColor=fff)](https://github.com/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2023lts_0xB8C957F3_public.asc) **[Download Public Key](https://github.com/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)**
 
 - Pretty Good Privacy (PGP) encryption program provides cryptographic privacy and authentication for data communication. PGP is used for signing, encrypting, and decrypting texts, e-mails, files, directories, and whole disk partitions and to increase the security of e-mail communications.
 - GNU Privacy Guard (GnuPG or GPG) is a free-software replacement for PGP cryptographic software suite. The software is compliant with RFC 4880, the IETF standards-track specification of OpenPGP.
@@ -77,14 +77,14 @@ sig          79A9CCDDB8C957F3 2023-09-26  [self-signature]
 
 ## 💽 PGP Public key block
 
-### 🔑 KEY: [KagurazakaYashi_2023lts_0xB8C957F3_public.asc](/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)
+### 🔑 KEY: [KagurazakaYashi_2023lts_0xB8C957F3_public.asc](https://github.com/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)
 
-### 🖋️ SIGN: [KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig](KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)
+### 🖋️ SIGN: [KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig](https://github.com/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)
 
 ## 🚫 Revoked Keys
 
 - `yashipgppublickey2016lts.asc`
-  - 🔓 Revocation certificate: [KagurazakaYashi_2016lts.rev](/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2016lts.rev)
+  - 🔓 Revocation certificate: [KagurazakaYashi_2016lts.rev](https://github.com/kagurazakayashi/pubkey/blob/master/KagurazakaYashi_2016lts.rev)
   - Fingerprint: `1F017CCB7C3BFE6CEA4F5D5D3127DF05A772B61D`
   - pub rsa4096/`501f6f8645f06a4034ccd9b63854e1ca1474714b` 2016-06-26T05:12:38Z
   - sig revok `3854e1ca1474714b` 2016-06-26T05:12:41Z
