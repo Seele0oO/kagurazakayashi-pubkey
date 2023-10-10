@@ -1,40 +1,93 @@
-# 🔑 GPG Pubkey 公钥
+# 🔑 PGP/GPG Pubkey 公钥
 
-KagurazakaYashi (神楽坂雅詩), KagurazakaMasae (神楽坂雅絵)
+`KagurazakaYashi (神楽坂雅詩)`, `KagurazakaMasae (神楽坂雅絵)`
 
-- **This is the pubkey in case you need.**
-- **这里是我的 GPG 公钥，如果你想和我加密通讯，可能会需要它。**
+If you want to make sure that no evildoers eavesdrop on data that you send to me, you can use PGP encryption. You can use my public key to encrypt messages so that only I can decrypt them (even you can't decode them). This page describes how to retrieve and verify my PGP public key.
 
-## 📥 Download 下载
+如果你想确保没有坏人窃听你发送给我的数据，你可以使用 PGP 加密。你可以使用我的公钥来加密消息，以便只有我可以解密它们（甚至你自己都无法解密它们）。本页介绍如何检索和验证我的 PGP 公钥。
 
-- **[![Pubkey URL](https://img.shields.io/badge/-PGPkey-0093DD?logo=GNU%20Privacy%20Guard&labelColor=0093DD&logoColor=fff) Download Public Key 点此下载公钥: KagurazakaYashi_2023lts_0xB8C957F3_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)**
-  - [Download public key signature file 点此下载公钥签名文件: KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)
+## 📥 Download
 
-- **Unique publish and update URL 唯一指定发布和更新源:**
-  - <https://github.com/kagurazakayashi/pubkey>
+### 🔑 [Download Public Key: KagurazakaYashi_2023lts_0xB8C957F3_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)
 
-## 🔐 What is GPG ? 什么是 GPG ？
+🔏 [Download public key signature file: KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)
+
+## 📥 下载
+
+### 🔑 [点此下载公钥: KagurazakaYashi_2023lts_0xB8C957F3_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)
+
+🔏 [点此下载公钥签名文件: KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)
+
+## ✅ Verify this repository
+
+🌎 Unique publish and update URL: <https://github.com/kagurazakayashi/pubkey>
+
+1. Go to [commits](https://github.com/kagurazakayashi/pubkey/commits/master) :
+2. Check whether the latest Commit has the `verified` label.
+3. Click the `verified` label and you should be able to see:
+     1. Message: `This commit was signed with the committer’s verified signature.`
+     2. `GPG key ID` used when `git commit` : `79A9CCDDB8C957F3` .
+
+[Learn about vigilant mode](https://docs.github.com/github/authenticating-to-github/displaying-verification-statuses-for-all-of-your-commits)
+
+## ✅ 验证此仓库
+
+🌏 唯一指定发布和更新源: <https://github.com/kagurazakayashi/pubkey>
+
+1. 前往 [commits](https://github.com/kagurazakayashi/pubkey/commits/master) ：
+2. 检查最新的 Commit 是否具有 `verified` 标签。
+3. 点击 verified 标签，应能够看到：
+    1. 提示信息： `This commit was signed with the committer’s verified signature.`
+    2. `git commit` 时使用的 `GPG key ID` : `79A9CCDDB8C957F3` 。
+  
+[关于警戒模式](https://docs.github.com/github/authenticating-to-github/displaying-verification-statuses-for-all-of-your-commits)
+
+## 🔐 What is PGP/GPG ?
 
 - [Pretty Good Privacy (PGP)](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) encryption program provides cryptographic privacy and authentication for data communication. PGP is used for signing, encrypting, and decrypting texts, e-mails, files, directories and to increase the security of communications.
-  - [GNU Privacy Guard (GnuPG or GPG)](https://en.wikipedia.org/wiki/GNU_Privacy_Guard) is a free-software replacement for PGP cryptographic software suite. The software is compliant with RFC 4880, the IETF standards-track specification of OpenPGP.
-- [Pretty Good Privacy (PGP)](https://baike.baidu.com/item/PGP) 加密程序为数据通信提供加密隐私和身份验证。 PGP 用于对文本、电子邮件、文件、目录进行签名、加密和解密，并提高通信的安全性。
-  - [GNU Privacy Guard (GnuPG 或 GPG)](https://baike.baidu.com/item/GnuPG) 是 PGP 加密软件套件的免费软件替代品。 该软件符合 OpenPGP 的 IETF 标准轨道规范 RFC 4880。
+- [GNU Privacy Guard (GnuPG or GPG)](https://en.wikipedia.org/wiki/GNU_Privacy_Guard) is a free-software replacement for PGP cryptographic software suite. The software is compliant with RFC 4880, the IETF standards-track specification of OpenPGP.
 
-## 📱 Applications 常用软件
+### ⚙ How does PGP work?
 
-- If you are not familiar with the commands, you can use the graphical interface software [Kleopatra](https://www.openpgp.org/software/kleopatra/). It is included in:
-- 如果你不熟悉命令，可以使用图形界面软件 [Kleopatra](https://www.openpgp.org/software/kleopatra/) 。它包含在:
-  - [Gpg4win](https://www.gpg4win.org/) (Windows)
-  - [GPG Suite](https://gpgtools.org/) (macOS)
-  - [Kleopatra](https://apps.kde.org/kleopatra/) (Linux KDE)
-- Mobile apps 手机 APP :
-  - [OpenKeychain](https://www.openkeychain.org/) (Android)
-  - [PGPro](https://pgpro.app/) (iOS)
-- [More 更多 ...](https://gnupg.org/download/)
+- PGP works based on numerical encryption using public and private keys. For example, when `User A` wants to send an encrypted data to `User B`, the later generates a pair of public and private keys. The private key is kept secret and the public key should be shared with `User A`.
+- `User A` encrypts the data using the public key of `User B` and digitally signs the data using the former's private key and sends the data. To decrypt the data, `User B` needs to use the private key associated with the public key used to encrypt the data.
+
+## 🔐 什么是 PGP/GPG ？
+
+- [Pretty Good Privacy (PGP)](https://baike.baidu.com/item/PGP) 加密程序为数据通信提供加密隐私和身份验证。PGP 用于对文本、电子邮件、文件、目录进行签名、加密和解密，并提高通信的安全性。
+- [GNU Privacy Guard (GnuPG 或 GPG)](https://baike.baidu.com/item/GnuPG) 是 PGP 加密软件套件的免费软件替代品。该软件符合 OpenPGP 的 IETF 标准 RFC 4880。
+
+### ⚙ 它是如何运作的？
+
+- PGP 基于使用公钥和私钥的数字加密来工作。例如，当 `用户A` 想要向 `用户B` 发送加密数据时，后者生成一对公钥和私钥。私钥保密，公钥应与 `用户A` 共享。
+- `用户A` 使用 `用户B` 的公钥对数据进行加密，并使用 `用户B` 的私钥对数据进行数字签名并发送数据。为了解密数据，`用户B` 需要使用与用于加密数据的公钥关联的私钥。
+
+## 🔧 Applications 常用软件
+
+### 💻 Windows / macOS / Linux
+
+If you are not familiar with the commands, you can use the graphical interface software [Kleopatra](https://www.openpgp.org/software/kleopatra/). It is included in:
+
+如果你不熟悉命令，可以使用图形界面软件 [Kleopatra](https://www.openpgp.org/software/kleopatra/) 。它包含在:
+
+- [Gpg4win](https://www.gpg4win.org/) (Windows)
+- [GPG Suite](https://gpgtools.org/) (macOS)
+- [Kleopatra](https://apps.kde.org/kleopatra/) (Linux KDE)
+
+### 📱 Android / iOS
+
+- [OpenKeychain](https://www.openkeychain.org/) (Android)
+- [PGPro](https://pgpro.app/) (iOS)
+
+[More 更多 ...](https://gnupg.org/download/)
 
 ## 💻 Common commands 常用命令
 
-### Key management 密钥管理
+These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations should work similarly.
+
+这些指令适用于 `GnuPG (GPG)` ，但其他的 `OpenPGP` 实现使用方法应该类似。
+
+### 📁 Key management 密钥管理
 
 - Import the downloaded public key 导入下载的公钥:
   - `gpg --import "KagurazakaYashi_2023lts_0xB8C957F3_public.asc"`
@@ -43,7 +96,7 @@ KagurazakaYashi (神楽坂雅詩), KagurazakaMasae (神楽坂雅絵)
 - Generate a new key pair 生成你自己的新的密钥对:
   - `gpg --full-generate-key`
 
-### Encrypt 加密
+### 🔐 Encrypt 加密
 
 - Encrypt a file 加密一个文件:
   - `gpg -e -r 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 demo.txt`
@@ -54,7 +107,7 @@ KagurazakaYashi (神楽坂雅詩), KagurazakaMasae (神楽坂雅絵)
   - `macOS` End input 结束输入: `Command+D`
   - `Linux` End input 结束输入: `Ctrl+D`
 
-### Sign 签名
+### 🔏 Sign 签名
 
 - Sign a file 签名一个文件:
   - `gpg -u [Your private key fingerprint 你的私钥指纹] -s demo.txt`
@@ -64,9 +117,9 @@ KagurazakaYashi (神楽坂雅詩), KagurazakaMasae (神楽坂雅絵)
 - Encrypt and sign a file 加密并签名一个文件:
   - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 1.txt`
 - Encrypt and sign a text 加密并签名一段文本:
-  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -a 1.txt`
+  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -a`
 
-### More commands 更多命令
+### 📖 More commands 更多命令
 
 - `gpg --help`
 
@@ -146,7 +199,7 @@ sig          79A9CCDDB8C957F3 2023-09-26  [self-signature]
 ### `yashipgppublickey2016lts.asc`, `yashisshpublickey2016lts.pub`
 
 - 🔓 Revocation certificate 吊销证书:
-  - [KagurazakaYashi_2016lts.rev](https://github.comkagurazakayashi/pubkey/releases/download/2023.10KagurazakaYashi_2016lts.rev)
+  - [KagurazakaYashi_2016lts.rev](https://github.comkagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2016lts.rev)
 - Fingerprint 指纹: `1F017CCB7C3BFE6CEA4F5D5D3127DF05A772B61D`
   - pub rsa4096/`501f6f8645f06a4034ccd9b63854e1ca1474714b` 2016-06-26T05:12:38Z
   - sig revok `3854e1ca1474714b` 2016-06-26T05:12:41Z
