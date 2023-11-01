@@ -6,6 +6,8 @@ If you want to make sure that no evildoers eavesdrop on data that you send to me
 
 如果你想确保没有坏人窃听你发送给我的数据，你可以使用 PGP 加密。你可以使用我的公钥来加密消息，以便只有我可以解密它们（甚至你自己都无法解密它们）。本页介绍如何检索和验证我的 PGP 公钥。
 
+[![Keybase](https://img.shields.io/badge/-Keybase-33A0FF?logo=Keybase&labelColor=33A0FF&logoColor=fff)](https://keybase.io/kagurazakayashi)
+
 ## 📥 Download
 
 ### 🔑 [Download Public Key: KagurazakaYashi_2023lts_0xB8C957F3_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)
@@ -98,9 +100,8 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 
 ### 🔐 Encrypt 加密
 
-- Encrypt a file 加密一个文件:
-  - `gpg -e -r 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 demo.txt`
-  - output 生成文件: `demo.txt.gpg`
+- Encrypt a file 加密一个 demo.txt 文件:
+  - `gpg -e -r 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -o demo.txt.sig demo.txt`
 - Encrypt a text 加密一段文本:
   - `gpg -ea -r 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3`
   - `Windows` End input 结束输入: `Ctrl+Z, Enter回车`
@@ -109,15 +110,14 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 
 ### 🔏 Sign 签名
 
-- Sign a file 签名一个文件:
-  - `gpg -u [Your private key fingerprint 你的私钥指纹] -s demo.txt`
-  - output 生成文件: `demo.txt.asc`
+- Sign a file 签名一个 demo.txt 文件:
+  - `gpg -u [Your private key fingerprint 你的私钥指纹] -s -o demo.txt.sig demo.txt`
 - Sign a text 签名一段文本:
   - `gpg -u [Your private key fingerprint 你的私钥指纹] --clearsign`
-- Encrypt and sign a file 加密并签名一个文件:
-  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 1.txt`
+- Encrypt and sign a file 加密并签名一个 demo.txt 文件:
+  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -o demo.txt.gpg demo.txt`
 - Encrypt and sign a text 加密并签名一段文本:
-  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -a`
+  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -a -e`
 
 ### 📖 More commands 更多命令
 
@@ -126,18 +126,12 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 ## 🖋️ Hash 文件校验码
 
 ```ini
-[openssl md5 K*]
-KagurazakaYashi_2016lts.rev="b312667712c4321f120f6f619d96f341"
-KagurazakaYashi_2023lts_0xB8C957F3_public.asc="20394805a05aca8e9254b4d76e0e7f67"
-KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig="66fa7155a50068fd1d3d3a3f2dae989f"
-[openssl sha1 K*]
-KagurazakaYashi_2016lts.rev="f3c3452afd8852316d096f307c7378e9ccae1016"
-KagurazakaYashi_2023lts_0xB8C957F3_public.asc="6dbacdd7c92608823109ecf375617f66dc402073"
-KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig="58060a608c585739e23a2eaf4307fbbbd328df8a"
-[openssl sha256 K*]
-KagurazakaYashi_2016lts.rev="286825c0450a3d366eb29e7105edf5b246ddf3a9d41c9a561270c9ebd993eb99"
-KagurazakaYashi_2023lts_0xB8C957F3_public.asc="a3e2457b2c67676aa3e74036bbc0624ee83b3a2bcec7f48de5bf03ded45de41f"
-KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig="5e5838757a0a121a4ecb2314503b6b07e15f88f3d5be9db2f3725bd77d9010d1"
+[openssl md5 KagurazakaYashi_2023*]
+MD5(KagurazakaYashi_2023lts_0xB8C957F3_public.asc)= "b66dd5b045e8a7f904eda2364044a9ec"
+MD5(KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)= "bcc222e1c8eabe4cfe009c3631eca533"
+[openssl sha256 KagurazakaYashi_2023*]
+SHA2-256(KagurazakaYashi_2023lts_0xB8C957F3_public.asc)= "7fd7d500f139e912f7c7ae53a79637b19ab6b475443908d3e02227d838318bbe"
+SHA2-256(KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)= '94ba292c8c67f22dcaa04dea2e27419a5e94b70dece8d1378d5d6dc9844bc241'
 ```
 
 ## 🔑 KagurazakaYashi_0xB8C957F3_public.asc
@@ -156,6 +150,18 @@ KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig="5e5838757a0a121a4ecb2314503b6
   - Email 电子邮件: `masae@uuu.moe`
     - Name 用户名: `KagurazakaMasae`
     - Comment 全名: `神楽坂雅絵`
+  - Email 电子邮件: `kagurazakayashi@keybase.io`
+    - Name 用户名: `keybase.io/kagurazakayashi`
+  - Email 电子邮件: `admin@uuu.moe`
+    - Name 用户名: `admin.uuu.moe`
+  - Email 电子邮件: `administrator@uuu.moe`
+    - Name 用户名: `administrator.uuu.moe`
+  - Email 电子邮件: `hostmaster@uuu.moe`
+    - Name 用户名: `hostmaster.uuu.moe`
+  - Email 电子邮件: `webmaster@uuu.moe`
+    - Name 用户名: `webmaster.uuu.moe`
+  - Email 电子邮件: `postmaster@uuu.moe`
+    - Name 用户名: `postmaster.uuu.moe`
 - Subkeys 子密钥:
   - ID 编号: `79A9CCDDB8C957F3`
     - Signature 签名: `9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3`
@@ -173,22 +179,20 @@ KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig="5e5838757a0a121a4ecb2314503b6
   - Cardholder: `KagurazakaYashi`
 
 ```log
-pub   rsa4096 2023-09-26 [SC]
-      9A91 21AF E000 2AB7 46FB  0B10 79A9 CCDD B8C9 57F3
-uid           [ultimate] KagurazakaYashi (神楽坂雅詩) <yashi@uuu.moe>
-sig 3        79A9CCDDB8C957F3 2023-09-26  [self-signature]
-uid           [ultimate] KagurazakaMasae (神楽坂雅絵) <masae@uuu.moe>
-sig 3        79A9CCDDB8C957F3 2023-09-26  [self-signature]
-uid           [ultimate] KagurazakaMiyabi (神楽坂雅詩) <miyabi@uuu.moe>
-sig 3        79A9CCDDB8C957F3 2023-09-26  [self-signature]
-uid           [ultimate] [jpeg image of size 4884]
-sig 3        79A9CCDDB8C957F3 2023-09-26  [self-signature]
-sub   rsa4096 2023-09-26 [A]
-      F92E 1E75 887C 7446 3818  1A20 B1DD 0AD3 4E9E 53AD
-sig          79A9CCDDB8C957F3 2023-09-26  [self-signature]
-sub   rsa4096 2023-09-26 [E]
-      EC03 4D6C 3F74 1766 3A0D  E830 AA09 F84D 08FB CBD7
-sig          79A9CCDDB8C957F3 2023-09-26  [self-signature]
+sec   rsa4096 2023-09-26 [SC]
+      9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3
+uid           KagurazakaYashi (神楽坂雅詩) <yashi@uuu.moe>
+uid           KagurazakaMiyabi (神楽坂雅詩) <miyabi@uuu.moe>
+uid           KagurazakaMasae (神楽坂雅絵) <masae@uuu.moe>
+uid           [jpeg image of size 4884]
+uid           admin.uuu.moe <admin@uuu.moe>
+uid           administrator.uuu.moe <administrator@uuu.moe>
+uid           hostmaster.uuu.moe <hostmaster@uuu.moe>
+uid           webmaster.uuu.moe <webmaster@uuu.moe>
+uid           postmaster.uuu.moe <postmaster@uuu.moe>
+uid           keybase.io/kagurazakayashi <kagurazakayashi@keybase.io>
+ssb   rsa4096 2023-09-26 [E]
+ssb   rsa4096 2023-09-26 [A]
 ```
 
 ## 🚫 Revoked Keys 已经作废的密钥对
@@ -200,8 +204,9 @@ sig          79A9CCDDB8C957F3 2023-09-26  [self-signature]
 
 - 🔓 Revocation certificate 吊销证书:
   - [KagurazakaYashi_2016lts.rev](https://github.comkagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2016lts.rev)
-- Fingerprint 指纹: `1F017CCB7C3BFE6CEA4F5D5D3127DF05A772B61D`
+- Fingerprint 指纹: `1F017CCB7C3BFE6CEA4F5D5D3127DF05A772B61D`, `501F6F8645F06A4034CCD9B63854E1CA1474714B`
   - pub rsa4096/`501f6f8645f06a4034ccd9b63854e1ca1474714b` 2016-06-26T05:12:38Z
   - sig revok `3854e1ca1474714b` 2016-06-26T05:12:41Z
   - pub rsa4096/`1f017ccb7c3bfe6cea4f5d5d3127df05a772b61d` 2016-09-11T16:51:51Z
   - sig revok `3127df05a772b61d` 2023-09-26T06:14:52Z
+  - sub rsa4096/`0b32ef63d918d12c2e5ea4d7ed973e251f29634c` 2016-06-26T05:12:38Z
