@@ -10,15 +10,15 @@ If you want to make sure that no evildoers eavesdrop on data that you send to me
 
 ## 📥 Download
 
-### 🔑 [Download Public Key: KagurazakaYashi_2023lts_0xB8C957F3_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)
+### 🔑 [Download Public Key: KagurazakaYashi_2024lts_9CDC44EE8D_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2024/KagurazakaYashi_2024lts_9CDC44EE8D_public.asc)
 
-🔏 [Download public key signature file: KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)
+🔏 [Download public key signature file: KagurazakaYashi_2024lts_9CDC44EE8D_public.asc.sig](https://github.com/kagurazakayashi/pubkey/releases/download/2024/KagurazakaYashi_2024lts_9CDC44EE8D_public.asc.sig)
 
 ## 📥 下载
 
-### 🔑 [点此下载公钥: KagurazakaYashi_2023lts_0xB8C957F3_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc)
+### 🔑 [点此下载公钥: KagurazakaYashi_2024lts_9CDC44EE8D_public.asc](https://github.com/kagurazakayashi/pubkey/releases/download/2024/KagurazakaYashi_2024lts_9CDC44EE8D_public.asc)
 
-🔏 [点此下载公钥签名文件: KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig](https://github.com/kagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)
+🔏 [点此下载公钥签名文件: KagurazakaYashi_2024lts_9CDC44EE8D_public.asc.sig](https://github.com/kagurazakayashi/pubkey/releases/download/2024/KagurazakaYashi_2024lts_9CDC44EE8D_public.asc.sig)
 
 ## ✅ Verify this repository
 
@@ -28,7 +28,7 @@ If you want to make sure that no evildoers eavesdrop on data that you send to me
 2. Check whether the latest Commit has the `verified` label.
 3. Click the `verified` label and you should be able to see:
      1. Message: `This commit was signed with the committer’s verified signature.`
-     2. `GPG key ID` used when `git commit` : `79A9CCDDB8C957F3` .
+     2. `GPG key ID` used when `git commit` : `ED92F99CDC44EE8D` .
 
 [Learn about vigilant mode](https://docs.github.com/github/authenticating-to-github/displaying-verification-statuses-for-all-of-your-commits)
 
@@ -40,7 +40,7 @@ If you want to make sure that no evildoers eavesdrop on data that you send to me
 2. 检查最新的 Commit 是否具有 `verified` 标签。
 3. 点击 verified 标签，应能够看到：
     1. 提示信息： `This commit was signed with the committer’s verified signature.`
-    2. `git commit` 时使用的 `GPG key ID` : `79A9CCDDB8C957F3` 。
+    2. `git commit` 时使用的 `GPG key ID` : `ED92F99CDC44EE8D` 。
   
 [关于警戒模式](https://docs.github.com/github/authenticating-to-github/displaying-verification-statuses-for-all-of-your-commits)
 
@@ -92,7 +92,7 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 ### 📁 Key management 密钥管理
 
 - Import the downloaded public key 导入下载的公钥:
-  - `gpg --import "KagurazakaYashi_2023lts_0xB8C957F3_public.asc"`
+  - `gpg --import "KagurazakaYashi_2024lts_9CDC44EE8D_public.asc"`
 - Delete a public key 删除一个公钥:
   - `gpg --delete-keys 1F017CCB7C3BFE6CEA4F5D5D3127DF05A772B61D`
 - Generate a new key pair 生成你自己的新的密钥对:
@@ -101,9 +101,9 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 ### 🔐 Encrypt 加密
 
 - Encrypt a file 加密一个 demo.txt 文件:
-  - `gpg -e -r 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -o demo.txt.sig demo.txt`
+  - `gpg -e -r F722E85CBDE9984F192A9E5BED92F99CDC44EE8D -o demo.txt.sig demo.txt`
 - Encrypt a text 加密一段文本:
-  - `gpg -ea -r 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3`
+  - `gpg -ea -r F722E85CBDE9984F192A9E5BED92F99CDC44EE8D`
   - `Windows` End input 结束输入: `Ctrl+Z, Enter回车`
   - `macOS` End input 结束输入: `Command+D`
   - `Linux` End input 结束输入: `Ctrl+D`
@@ -112,12 +112,13 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 
 - Sign a file 签名一个 demo.txt 文件:
   - `gpg -u [Your private key fingerprint 你的私钥指纹] -s -o demo.txt.sig demo.txt`
+  - 如果需要独立的文本签名文件可以将 `-s` 改成 `-b -a`
 - Sign a text 签名一段文本:
   - `gpg -u [Your private key fingerprint 你的私钥指纹] --clearsign`
 - Encrypt and sign a file 加密并签名一个 demo.txt 文件:
-  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -o demo.txt.gpg demo.txt`
+  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser F722E85CBDE9984F192A9E5BED92F99CDC44EE8D -o demo.txt.gpg demo.txt`
 - Encrypt and sign a text 加密并签名一段文本:
-  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3 -a -e`
+  - `gpg -u [Your private key fingerprint 你的私钥指纹] -ser F722E85CBDE9984F192A9E5BED92F99CDC44EE8D -a -e`
 
 ### 📖 More commands 更多命令
 
@@ -125,21 +126,26 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 
 ## 🖋️ Hash 文件校验码
 
-```ini
-[openssl md5 KagurazakaYashi_2023*]
-MD5(KagurazakaYashi_2023lts_0xB8C957F3_public.asc)= "b66dd5b045e8a7f904eda2364044a9ec"
-MD5(KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)= "bcc222e1c8eabe4cfe009c3631eca533"
-[openssl sha256 KagurazakaYashi_2023*]
-SHA2-256(KagurazakaYashi_2023lts_0xB8C957F3_public.asc)= "7fd7d500f139e912f7c7ae53a79637b19ab6b475443908d3e02227d838318bbe"
-SHA2-256(KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)= '94ba292c8c67f22dcaa04dea2e27419a5e94b70dece8d1378d5d6dc9844bc241'
-```
+- SHA2-256(KagurazakaYashi_2016lts.rev)
+  - `286825c0450a3d366eb29e7105edf5b246ddf3a9d41c9a561270c9ebd993eb99`
+- SHA2-256(KagurazakaYashi_2016lts.rev.sig)
+  - `c236eab90b9a5f65f04c9fd7e8306cb0eaf45b1a63d8b54a6dab858be633adf3`
+- SHA2-256(KagurazakaYashi_2023lts.rev)
+  - `2c701609a0fe8e6c56699b2a5464b6a51b93054509754bf2bee4a85fad6b3b32`
+- SHA2-256(KagurazakaYashi_2023lts.rev.sig)
+  - `40b5582716a27c90498def6715caa6eb73fc77ff8e594516f21de8aa471d1765`
+- SHA2-256(KagurazakaYashi_2024lts_9CDC44EE8D_public.asc)
+  - `ceff9122ea3b3bb29a0541ae07b64b4f5746c8939eb23f18723ec2ff70c6c593`
+- SHA2-256(KagurazakaYashi_2024lts_9CDC44EE8D_public.asc.sig)
+  - `0e72dde5de6a1ae00e42516cdf9a75cf30ba3edc5f079b7d128c944f4694af53`
 
-## 🔑 KagurazakaYashi_0xB8C957F3_public.asc
+## 🔑 KagurazakaYashi_0xDC44EE8D_public.asc
 
-- Fingerprint 指纹: `9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3`
-- Key-ID 公钥ID: `79A9CCDDB8C957F3`
-- Valid from 启用日期: `2023/9/26`
-- Pubkey URL 公钥服务器: [keyserver.ubuntu.com](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x9a9121afe0002ab746fb0b1079a9ccddb8c957f3)
+- Fingerprint 指纹: `F722E85CBDE9984F192A9E5BED92F99CDC44EE8D`
+- Valid from 启用日期: `2023/12/13`
+- Pubkey URL 公钥服务器:
+  - [keyserver.ubuntu.com](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF722E85CBDE9984F192A9E5BED92F99CDC44EE8D)
+  - [keys.openpgp.org](https://keys.openpgp.org/search?q=F722E85CBDE9984F192A9E5BED92F99CDC44EE8D)
 - User IDs 目标用户 ID:
   - Email 电子邮件: `yashi@uuu.moe` (Primary 主显示)
     - Name 用户名: `KagurazakaYashi`
@@ -150,49 +156,51 @@ SHA2-256(KagurazakaYashi_2023lts_0xB8C957F3_public.asc.sig)= '94ba292c8c67f22dca
   - Email 电子邮件: `masae@uuu.moe`
     - Name 用户名: `KagurazakaMasae`
     - Comment 全名: `神楽坂雅絵`
+  - Email 电子邮件: `admin@uuu.moe`
+    - Name 用户名: `Kagurazaka`
+    - Comment 全名: `神楽坂`
+  - Email 电子邮件: `admin@yashi.moe`
+    - Name 用户名: `KagurazakaYashi`
+    - Comment 全名: `神楽坂雅詩`
+  - Email 电子邮件: `admin@miyabi.moe`
+    - Name 用户名: `KagurazakaMiyabi`
+    - Comment 全名: `神楽坂雅詩`
+  - Email 电子邮件: `admin@masae.moe`
+    - Name 用户名: `KagurazakaMasae`
+    - Comment 全名: `神楽坂雅絵`
   - Email 电子邮件: `kagurazakayashi@keybase.io`
     - Name 用户名: `keybase.io/kagurazakayashi`
-  - Email 电子邮件: `admin@uuu.moe`
-    - Name 用户名: `admin.uuu.moe`
-  - Email 电子邮件: `administrator@uuu.moe`
-    - Name 用户名: `administrator.uuu.moe`
-  - Email 电子邮件: `hostmaster@uuu.moe`
-    - Name 用户名: `hostmaster.uuu.moe`
-  - Email 电子邮件: `webmaster@uuu.moe`
-    - Name 用户名: `webmaster.uuu.moe`
-  - Email 电子邮件: `postmaster@uuu.moe`
-    - Name 用户名: `postmaster.uuu.moe`
+  - Email 电子邮件: `kagurazakayashi@github.com`
+    - Name 用户名: `UpdateURL`
+    - Comment 全名: `https://github.com/kagurazakayashi/pubkey`
 - Subkeys 子密钥:
-  - ID 编号: `79A9CCDDB8C957F3`
-    - Signature 签名: `9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3`
-    - Type 加密类型: `RSA 4096`
+  - Signature 签名: `F722E85CBDE9984F192A9E5BED92F99CDC44EE8D`
+    - Type 加密类型: `EdDSA ed25519`
     - Usage 用途: `Certify 认证, Sign 签名`
-  - ID 编号: `B1DD0AD34E9E53AD`
-    - Authentication 验证: `F92E1E75887C744638181A20B1DD0AD34E9E53AD`
-    - Type 加密类型: `RSA 4096`
-    - Usage 用途: `Authenticate 验证`
-  - ID 编号: `AA09F84D08FBCBD7`
-    - Encryption 加密: `EC034D6C3F7417663A0DE830AA09F84D08FBCBD7`
-    - Type 加密类型: `RSA 4096`
+  - Signature 签名: `B8A8DF5FB5C7A5E7C5EAD893398AC5505C1469AE`
+    - Type 加密类型: `ECDH cv25519`
     - Usage 用途: `Encrypt 加密`
-- OpenPGP v3.4 card (本次私钥采用智能卡硬件保存)
+  - Signature 签名: `0BC11CB7DFC838AB6FA779B24C929AA64A31897D`
+    - Type 加密类型: `EdDSA ed25519`
+    - Usage 用途: `Authenticate 验证`
+- OpenPGP v3.4 card
   - Cardholder: `KagurazakaYashi`
 
 ```log
-sec   rsa4096 2023-09-26 [SC]
-      9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3
-uid           KagurazakaYashi (神楽坂雅詩) <yashi@uuu.moe>
-uid           KagurazakaMiyabi (神楽坂雅詩) <miyabi@uuu.moe>
-uid           KagurazakaMasae (神楽坂雅絵) <masae@uuu.moe>
-uid           [jpeg image of size 4884]
-uid           admin.uuu.moe <admin@uuu.moe>
-uid           administrator.uuu.moe <administrator@uuu.moe>
-uid           hostmaster.uuu.moe <hostmaster@uuu.moe>
-uid           webmaster.uuu.moe <webmaster@uuu.moe>
-uid           postmaster.uuu.moe <postmaster@uuu.moe>
-uid           keybase.io/kagurazakayashi <kagurazakayashi@keybase.io>
-ssb   rsa4096 2023-09-26 [E]
-ssb   rsa4096 2023-09-26 [A]
+sec   ed25519 2023-12-13 [SC]
+      F722E85CBDE9984F192A9E5BED92F99CDC44EE8D
+uid           [ultimate] KagurazakaYashi (神楽坂雅詩) <yashi@uuu.moe>
+uid           [ultimate] KagurazakaMiyabi (神楽坂雅詩) <miyabi@uuu.moe>
+uid           [ultimate] KagurazakaMasae (神楽坂雅絵) <masae@uuu.moe>
+uid           [ultimate] Kagurazaka (神楽坂) <admin@uuu.moe>
+uid           [ultimate] KagurazakaYashi (神楽坂雅詩) <admin@yashi.moe>
+uid           [ultimate] KagurazakaMiyabi (神楽坂雅詩) <admin@miyabi.moe>
+uid           [ultimate] KagurazakaMasae (神楽坂雅絵) <admin@masae.moe>
+uid           [ultimate] [jpeg image of size 4884]
+uid           [ultimate] keybase.io/kagurazakayashi <kagurazakayashi@keybase.io>
+uid           [ultimate] UpdateURL (https://github.com/kagurazakayashi/pubkey) <kagurazakayashi@github.com>
+ssb   cv25519 2023-12-13 [E]
+ssb   ed25519 2023-12-13 [A]
 ```
 
 ## 🚫 Revoked Keys 已经作废的密钥对
@@ -200,13 +208,12 @@ ssb   rsa4096 2023-09-26 [A]
 - These keys have been revoked, please delete and do not use them again.
 - 这些密钥已经吊销，请删除并不要再使用。
 
-### `yashipgppublickey2016lts.asc`, `yashisshpublickey2016lts.pub`
-
-- 🔓 Revocation certificate 吊销证书:
-  - [KagurazakaYashi_2016lts.rev](https://github.comkagurazakayashi/pubkey/releases/download/2023.10/KagurazakaYashi_2016lts.rev)
-- Fingerprint 指纹: `1F017CCB7C3BFE6CEA4F5D5D3127DF05A772B61D`, `501F6F8645F06A4034CCD9B63854E1CA1474714B`
-  - pub rsa4096/`501f6f8645f06a4034ccd9b63854e1ca1474714b` 2016-06-26T05:12:38Z
-  - sig revok `3854e1ca1474714b` 2016-06-26T05:12:41Z
-  - pub rsa4096/`1f017ccb7c3bfe6cea4f5d5d3127df05a772b61d` 2016-09-11T16:51:51Z
-  - sig revok `3127df05a772b61d` 2023-09-26T06:14:52Z
-  - sub rsa4096/`0b32ef63d918d12c2e5ea4d7ed973e251f29634c` 2016-06-26T05:12:38Z
+- `yashipgppublickey2016lts.*`
+  - Expire date 到期时间: 2023.10.04
+  - Fingerprint 指纹: `1F017CCB7C3BFE6CEA4F5D5D3127DF05A772B61D`
+  - Fingerprint 指纹: `501F6F8645F06A4034CCD9B63854E1CA1474714B`
+  - Revocation certificate 吊销证书: [KagurazakaYashi_2016lts.rev](https://github.com/kagurazakayashi/pubkey/releases/download/2024/KagurazakaYashi_2016lts.rev)
+- `yashipgppublickey2023lts.*`
+  - Expire date 到期时间: 2023.12.31
+  - Fingerprint 指纹: `9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3`
+  - Revocation certificate 吊销证书: [KagurazakaYashi_2023lts.rev](https://github.com/kagurazakayashi/pubkey/releases/download/2024/KagurazakaYashi_2023lts.rev)

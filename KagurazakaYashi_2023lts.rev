@@ -1,0 +1,30 @@
+这是 OpenPGP 密钥的吊销证书：
+
+             KagurazakaYashi (神楽坂雅詩) <yashi@uuu.moe>
+ Fingerprint: 9A9121AFE0002AB746FB0B1079A9CCDDB8C957F3
+
+吊销证书是一种“杀死开关”，用于公开声明密钥将不再使用。
+吊销证书一旦发布，便不可能再被撤回。
+
+在妥协或私钥丢失的情况下使用它来吊销密钥。
+
+为了避免意外使用此文件，在下面的 5 个短横线之前插入了一个冒号。
+在导入和发布此吊销证书之前，请用文本编辑器删除此冒号。
+
+:-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: This is a revocation certificate
+
+iQI2BCABCAAgFiEEmpEhr+AAKrdG+wsQeanM3bjJV/MFAmU7XtMCHQAACgkQeanM
+3bjJV/N5uA/9EmsljfkC9L3poXhhfONTmm7zF+cqLZcS02W6ALG8tRRunGSYhVDu
+KqgP3qHFZhvbElciBeOjOmFVGWwH/1wGNSQlHiKy/wX0gdBN/kQjOamFcq5gpFih
+0fgAmf3XQS/tKfh7S1wqqS2Xm5nDWxOcBs4O9SAKPmBnybFDU7G7d7sfkM0uHFAt
+825ICEcP3YiMJYcAIYgCks0P1kjA/1YzXN5JAiUqQQo8h3jsRQwxFeYIIN+ZjohB
+tQZEtuPAJn3Zp/UxfkujrRwDoNtgVHt4znunzGv5+iZTUtpp+scs+75ndpKb4fmF
+H1UJNdGFv3toSwy/cDddtEBLlca42GawEOzAk1p19vF6s7p8JKAT1/W3id18B5C+
+k1v0RnOWAq2GG+iJ4UM3lUMjZ3AETdQNiLw2S/J1ng6Ut9lupZ4v4LqYop3thXL1
+KLDRclHYVGy4rzBEIDVdQrp0PAbZf8xpocULer+Z0EJBTr9W9lMykhMQHQl0ahss
+MVMA3eeCgTVawRskgyckyP5m78gHj5F/eJ2hyPkPO3Iu4uIg48EnAcSKGi5F0pEZ
+lMWSz7TkGX4nR4LQjZ4c8MaduNGNEbHcfEgTsbCLzt8ZIQ3V4uvtNn2SdfB4UEut
+GFMAKBQsBKYTZ4mQeQCQ6WXo54CfL1KxCkeu/xGevWDg+qHxLf8fnHw=
+=mLdp
+-----END PGP PUBLIC KEY BLOCK-----
