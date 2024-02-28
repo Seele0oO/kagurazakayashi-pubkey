@@ -137,7 +137,7 @@ These instructions are for `GnuPG (GPG)`, but other `OpenPGP` implementations sh
 - SHA2-256(KagurazakaYashi_2024lts_9CDC44EE8D_public.asc)
   - `ceff9122ea3b3bb29a0541ae07b64b4f5746c8939eb23f18723ec2ff70c6c593`
 - SHA2-256(KagurazakaYashi_2024lts_9CDC44EE8D_public.asc.sig)
-  - `0e72dde5de6a1ae00e42516cdf9a75cf30ba3edc5f079b7d128c944f4694af53`
+  - `3f90afc2aec5275c4a477b112145fab03b376c47101bc04f3b25faa8f0df02e4`
 
 ## 🔑 KagurazakaYashi_0xDC44EE8D_public.asc
 
